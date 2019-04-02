@@ -5,11 +5,7 @@ class Teacher < User
   attr_accessor :first_name, :last_name
 
   def teach
-    KNOWLEDGE.each do |string|
-      string
-    end
+    KNOWLEDGE.sample { |string| string }
   end
-
-
 
 end
